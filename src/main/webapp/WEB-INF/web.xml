@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" id="WebApp_ID" version="2.4">	<display-name>notetaker</display-name>
+	<servlet>
+		<description>
+		</description>
+		<display-name>savenote</display-name>
+		<servlet-name>savenote</servlet-name>
+		<servlet-class>com.savenote</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>savenote</servlet-name>
+		<url-pattern>/savenote</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description>
+		</description>
+		<display-name>savenote2</display-name>
+		<servlet-name>savenote2</servlet-name>
+		<servlet-class>com.savenote2</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>delete</display-name>
+		<servlet-name>delete</servlet-name>
+		<servlet-class>com.delete</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>deleteData</display-name>
+		<servlet-name>deleteData</servlet-name>
+		<servlet-class>com.delete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>savenote2</servlet-name>
+		<url-pattern>/savenote2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>delete</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>deleteData</servlet-name>
+		<url-pattern>/deleteData</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
